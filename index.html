@@ -10,6 +10,7 @@
         /* =========================
            基本設定
         ========================= */
+
         * {
             margin: 0;
             padding: 0;
@@ -32,9 +33,11 @@
             text-decoration: none;
         }
 
+
         /* =========================
            導覽列
         ========================= */
+
         nav {
             position: fixed;
             top: 0;
@@ -70,9 +73,11 @@
             opacity: 0.5;
         }
 
+
         /* =========================
            Hero
         ========================= */
+
         .hero {
             min-height: 100vh;
             display: flex;
@@ -108,9 +113,11 @@
             color: #777;
         }
 
+
         /* =========================
            共用 Section
         ========================= */
+
         section {
             padding: 110px 10%;
         }
@@ -128,9 +135,11 @@
             letter-spacing: -2px;
         }
 
+
         /* =========================
            About
         ========================= */
+
         .about {
             background: #e9e7df;
         }
@@ -144,9 +153,11 @@
             margin-bottom: 20px;
         }
 
+
         /* =========================
            四年學習歷程
         ========================= */
+
         .learning {
             background: #f7f6f2;
         }
@@ -175,7 +186,11 @@
             font-size: 14px;
         }
 
-        /* 課程網格 */
+
+        /* =========================
+           課程網格
+        ========================= */
+
         .course-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -220,9 +235,11 @@
             letter-spacing: 1px;
         }
 
+
         /* =========================
            Works
         ========================= */
+
         .works {
             background: #202020;
             color: white;
@@ -265,9 +282,17 @@
             margin-top: 10px;
         }
 
+        .work-card p {
+            margin-top: 8px;
+            font-size: 14px;
+            opacity: 0.6;
+        }
+
+
         /* =========================
            Skills
         ========================= */
+
         .skills-list {
             display: flex;
             flex-wrap: wrap;
@@ -281,9 +306,11 @@
             font-size: 14px;
         }
 
+
         /* =========================
            Contact
         ========================= */
+
         .contact {
             background: #e9e7df;
         }
@@ -301,9 +328,11 @@
             padding-bottom: 5px;
         }
 
+
         /* =========================
            Footer
         ========================= */
+
         footer {
             padding: 30px 10%;
             background: #202020;
@@ -314,9 +343,11 @@
             letter-spacing: 1px;
         }
 
+
         /* =========================
            手機版
         ========================= */
+
         @media (max-width: 700px) {
 
             nav {
@@ -359,30 +390,65 @@
                 gap: 10px;
             }
         }
+
     </style>
 </head>
 
+
 <body>
+
 
     <!-- =========================
          導覽列
     ========================= -->
+
     <nav>
-        <div class="logo">WS.</div>
+
+        <a href="index.html" class="logo">
+            WS.
+        </a>
 
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#learning">Learning</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+            <li>
+                <a href="#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="#learning">
+                    Learning
+                </a>
+            </li>
+
+            <li>
+                <a href="#works">
+                    Works
+                </a>
+            </li>
+
+            <li>
+                <a href="#skills">
+                    Skills
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact">
+                    Contact
+                </a>
+            </li>
+
         </ul>
+
     </nav>
 
 
     <!-- =========================
          首頁
     ========================= -->
+
     <header class="hero">
 
         <div class="hero-small">
@@ -410,6 +476,7 @@
     <!-- =========================
          About
     ========================= -->
+
     <section class="about" id="about">
 
         <div class="section-label">
@@ -446,6 +513,7 @@
     <!-- =========================
          四年學習歷程
     ========================= -->
+
     <section class="learning" id="learning">
 
         <div class="section-label">
@@ -457,7 +525,10 @@
         </h2>
 
 
-        <!-- 大一 -->
+        <!-- =========================
+             大一
+        ========================= -->
+
         <div class="year">
 
             <div class="year-header">
@@ -476,70 +547,102 @@
             <div class="course-grid">
 
                 <div class="course">
-                    <div>
-                        <div class="course-number">COURSE 01</div>
 
-                        <h3>基礎設計</h3>
+                    <div>
+
+                        <div class="course-number">
+                            COURSE 01
+                        </div>
+
+                        <h3>
+                            基礎設計
+                        </h3>
 
                         <p>
                             學習設計基礎、構成、色彩與視覺表達。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         VIEW COURSE →
                     </div>
+
                 </div>
 
 
                 <div class="course">
-                    <div>
-                        <div class="course-number">COURSE 02</div>
 
-                        <h3>視覺設計</h3>
+                    <div>
+
+                        <div class="course-number">
+                            COURSE 02
+                        </div>
+
+                        <h3>
+                            視覺設計
+                        </h3>
 
                         <p>
                             探索平面設計、視覺元素與作品呈現。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         VIEW COURSE →
                     </div>
+
                 </div>
 
 
                 <div class="course">
-                    <div>
-                        <div class="course-number">COURSE 03</div>
 
-                        <h3>媒材實作</h3>
+                    <div>
+
+                        <div class="course-number">
+                            COURSE 03
+                        </div>
+
+                        <h3>
+                            媒材實作
+                        </h3>
 
                         <p>
                             嘗試不同媒材與創作方式。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         VIEW COURSE →
                     </div>
+
                 </div>
 
 
                 <div class="course">
-                    <div>
-                        <div class="course-number">COURSE 04</div>
 
-                        <h3>學習設計</h3>
+                    <div>
+
+                        <div class="course-number">
+                            COURSE 04
+                        </div>
+
+                        <h3>
+                            學習設計
+                        </h3>
 
                         <p>
                             初步理解學習、教育與設計之間的關係。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         VIEW COURSE →
                     </div>
+
                 </div>
 
             </div>
@@ -547,7 +650,10 @@
         </div>
 
 
-        <!-- 大二 -->
+        <!-- =========================
+             大二
+        ========================= -->
+
         <div class="year">
 
             <div class="year-header">
@@ -566,62 +672,102 @@
             <div class="course-grid">
 
                 <div class="course">
+
                     <div>
-                        <div class="course-number">COURSE 01</div>
-                        <h3>UI / UX</h3>
+
+                        <div class="course-number">
+                            COURSE 01
+                        </div>
+
+                        <h3>
+                            UI / UX
+                        </h3>
+
                         <p>
                             學習使用者介面與使用者體驗設計。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         COMING SOON →
                     </div>
+
                 </div>
 
 
                 <div class="course">
+
                     <div>
-                        <div class="course-number">COURSE 02</div>
-                        <h3>數位媒體</h3>
+
+                        <div class="course-number">
+                            COURSE 02
+                        </div>
+
+                        <h3>
+                            數位媒體
+                        </h3>
+
                         <p>
                             探索數位工具與多媒體創作。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         COMING SOON →
                     </div>
+
                 </div>
 
 
                 <div class="course">
+
                     <div>
-                        <div class="course-number">COURSE 03</div>
-                        <h3>影片製作</h3>
+
+                        <div class="course-number">
+                            COURSE 03
+                        </div>
+
+                        <h3>
+                            影片製作
+                        </h3>
+
                         <p>
                             學習影像敘事、剪輯與影音表達。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         COMING SOON →
                     </div>
+
                 </div>
 
 
                 <div class="course">
+
                     <div>
-                        <div class="course-number">COURSE 04</div>
-                        <h3>互動設計</h3>
+
+                        <div class="course-number">
+                            COURSE 04
+                        </div>
+
+                        <h3>
+                            互動設計
+                        </h3>
+
                         <p>
                             探索互動媒體與數位體驗。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         COMING SOON →
                     </div>
+
                 </div>
 
             </div>
@@ -629,7 +775,10 @@
         </div>
 
 
-        <!-- 大三 -->
+        <!-- =========================
+             大三
+        ========================= -->
+
         <div class="year">
 
             <div class="year-header">
@@ -648,62 +797,102 @@
             <div class="course-grid">
 
                 <div class="course">
+
                     <div>
-                        <div class="course-number">COURSE 01</div>
-                        <h3>專業設計</h3>
+
+                        <div class="course-number">
+                            COURSE 01
+                        </div>
+
+                        <h3>
+                            專業設計
+                        </h3>
+
                         <p>
                             發展個人設計方向與專業能力。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         COMING SOON →
                     </div>
+
                 </div>
 
 
                 <div class="course">
+
                     <div>
-                        <div class="course-number">COURSE 02</div>
-                        <h3>互動媒體</h3>
+
+                        <div class="course-number">
+                            COURSE 02
+                        </div>
+
+                        <h3>
+                            互動媒體
+                        </h3>
+
                         <p>
                             結合設計、科技與互動體驗。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         COMING SOON →
                     </div>
+
                 </div>
 
 
                 <div class="course">
+
                     <div>
-                        <div class="course-number">COURSE 03</div>
-                        <h3>教材設計</h3>
+
+                        <div class="course-number">
+                            COURSE 03
+                        </div>
+
+                        <h3>
+                            教材設計
+                        </h3>
+
                         <p>
                             將設計思維應用於學習媒材。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         COMING SOON →
                     </div>
+
                 </div>
 
 
                 <div class="course">
+
                     <div>
-                        <div class="course-number">COURSE 04</div>
-                        <h3>專題研究</h3>
+
+                        <div class="course-number">
+                            COURSE 04
+                        </div>
+
+                        <h3>
+                            專題研究
+                        </h3>
+
                         <p>
                             進行完整的研究與設計實作。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         COMING SOON →
                     </div>
+
                 </div>
 
             </div>
@@ -711,7 +900,10 @@
         </div>
 
 
-        <!-- 大四 -->
+        <!-- =========================
+             大四
+        ========================= -->
+
         <div class="year">
 
             <div class="year-header">
@@ -730,62 +922,102 @@
             <div class="course-grid">
 
                 <div class="course">
+
                     <div>
-                        <div class="course-number">COURSE 01</div>
-                        <h3>畢業專題</h3>
+
+                        <div class="course-number">
+                            COURSE 01
+                        </div>
+
+                        <h3>
+                            畢業專題
+                        </h3>
+
                         <p>
                             整合大學所學，完成個人代表性作品。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         COMING SOON →
                     </div>
+
                 </div>
 
 
                 <div class="course">
+
                     <div>
-                        <div class="course-number">COURSE 02</div>
-                        <h3>實習</h3>
+
+                        <div class="course-number">
+                            COURSE 02
+                        </div>
+
+                        <h3>
+                            實習
+                        </h3>
+
                         <p>
                             累積實務經驗，探索未來職涯方向。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         COMING SOON →
                     </div>
+
                 </div>
 
 
                 <div class="course">
+
                     <div>
-                        <div class="course-number">COURSE 03</div>
-                        <h3>完整作品集</h3>
+
+                        <div class="course-number">
+                            COURSE 03
+                        </div>
+
+                        <h3>
+                            完整作品集
+                        </h3>
+
                         <p>
                             整理大學期間的設計與創作成果。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         COMING SOON →
                     </div>
+
                 </div>
 
 
                 <div class="course">
+
                     <div>
-                        <div class="course-number">COURSE 04</div>
-                        <h3>個人發展</h3>
+
+                        <div class="course-number">
+                            COURSE 04
+                        </div>
+
+                        <h3>
+                            個人發展
+                        </h3>
+
                         <p>
                             建立個人品牌與專業方向。
                         </p>
+
                     </div>
 
                     <div class="course-link">
                         COMING SOON →
                     </div>
+
                 </div>
 
             </div>
@@ -798,6 +1030,7 @@
     <!-- =========================
          Selected Works
     ========================= -->
+
     <section class="works" id="works">
 
         <div class="section-label">
@@ -808,27 +1041,69 @@
             Works.
         </h2>
 
+
         <div class="works-grid">
 
-            <div class="work-card">
-                <span>01 / VISUAL DESIGN</span>
-                <h3>Visual Design</h3>
-            </div>
+
+            <!-- 數位科技概論：可點擊 -->
+
+            <a href="digital-technology.html" class="work-card">
+
+                <span>
+                    01 / DIGITAL TECHNOLOGY
+                </span>
+
+                <h3>
+                    數位科技概論作業
+                </h3>
+
+                <p>
+                    HTML & CSS Practice
+                </p>
+
+            </a>
+
+
+            <!-- 其他作品 -->
 
             <div class="work-card">
-                <span>02 / INTERACTIVE MEDIA</span>
-                <h3>Interactive Media</h3>
+
+                <span>
+                    02 / INTERACTIVE MEDIA
+                </span>
+
+                <h3>
+                    Interactive Media
+                </h3>
+
             </div>
 
-            <div class="work-card">
-                <span>03 / LEARNING MATERIAL</span>
-                <h3>Learning Material</h3>
-            </div>
 
             <div class="work-card">
-                <span>04 / CREATIVE PROJECT</span>
-                <h3>Creative Project</h3>
+
+                <span>
+                    03 / LEARNING MATERIAL
+                </span>
+
+                <h3>
+                    Learning Material
+                </h3>
+
             </div>
+
+
+            <div class="work-card">
+
+                <span>
+                    04 / CREATIVE PROJECT
+                </span>
+
+                <h3>
+                    Creative Project
+                </h3>
+
+            </div>
+
 
         </div>
 
@@ -838,6 +1113,7 @@
     <!-- =========================
          Skills
     ========================= -->
+
     <section id="skills">
 
         <div class="section-label">
@@ -850,12 +1126,29 @@
 
         <div class="skills-list">
 
-            <div class="skill">Visual Design</div>
-            <div class="skill">UI / UX</div>
-            <div class="skill">Video Editing</div>
-            <div class="skill">Digital Media</div>
-            <div class="skill">Learning Design</div>
-            <div class="skill">Creative Thinking</div>
+            <div class="skill">
+                Visual Design
+            </div>
+
+            <div class="skill">
+                UI / UX
+            </div>
+
+            <div class="skill">
+                Video Editing
+            </div>
+
+            <div class="skill">
+                Digital Media
+            </div>
+
+            <div class="skill">
+                Learning Design
+            </div>
+
+            <div class="skill">
+                Creative Thinking
+            </div>
 
         </div>
 
@@ -865,6 +1158,7 @@
     <!-- =========================
          Contact
     ========================= -->
+
     <section class="contact" id="contact">
 
         <div class="section-label">
@@ -886,6 +1180,7 @@
     <!-- =========================
          Footer
     ========================= -->
+
     <footer>
 
         <div>
@@ -897,6 +1192,7 @@
         </div>
 
     </footer>
+
 
 </body>
 </html>
