@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>數位科技概論｜許瑋珊</title>
+    <title>數位科技概論｜作業</title>
 
     <style>
         * {
@@ -18,12 +18,8 @@
         }
 
         body {
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Noto Sans TC",
-                "Microsoft JhengHei",
-                sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC",
+                         "PingFang TC", "Microsoft JhengHei", sans-serif;
             background: #f7f6f2;
             color: #202020;
             line-height: 1.7;
@@ -34,253 +30,210 @@
             text-decoration: none;
         }
 
-        /* ---------- NAV ---------- */
+        /* ===== NAV ===== */
 
         nav {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            z-index: 100;
+            height: 70px;
 
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
 
-            padding: 18px 5%;
-
-            background: rgba(247, 246, 242, 0.88);
-            backdrop-filter: blur(12px);
+            padding: 0 6%;
+            background: rgba(247, 246, 242, 0.9);
+            backdrop-filter: blur(10px);
 
             border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            z-index: 1000;
         }
 
         .logo {
             font-size: 20px;
             font-weight: 700;
-            letter-spacing: 0.08em;
+            letter-spacing: 1px;
         }
 
-        .nav-links {
-            display: flex;
-            gap: 28px;
-            list-style: none;
+        .back-link {
             font-size: 14px;
+            transition: opacity 0.3s ease;
         }
 
-        .nav-links a {
-            opacity: 0.65;
-            transition: 0.3s;
+        .back-link:hover {
+            opacity: 0.5;
         }
 
-        .nav-links a:hover {
-            opacity: 1;
-        }
-
-        /* ---------- HERO ---------- */
+        /* ===== HERO ===== */
 
         .hero {
-            min-height: 75vh;
-
-            padding: 150px 8% 90px;
+            min-height: 65vh;
 
             display: flex;
             flex-direction: column;
             justify-content: center;
 
-            background: #e9e7df;
+            padding: 120px 8% 80px;
         }
 
         .eyebrow {
             font-size: 13px;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            opacity: 0.55;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 {
-            font-size: clamp(55px, 10vw, 130px);
-            line-height: 0.95;
-            letter-spacing: -0.05em;
-            font-weight: 700;
-            margin-bottom: 35px;
-        }
-
-        .hero h1 span {
-            display: block;
-            font-weight: 400;
-        }
-
-        .hero-description {
-            max-width: 650px;
-            font-size: 18px;
-            opacity: 0.7;
-        }
-
-        /* ---------- CONTENT ---------- */
-
-        .section {
-            padding: 100px 8%;
-        }
-
-        .section-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        .section-number {
-            font-size: 13px;
-            letter-spacing: 0.12em;
-            opacity: 0.45;
-        }
-
-        .section h2 {
-            font-size: clamp(38px, 6vw, 72px);
-            line-height: 1;
-            letter-spacing: -0.04em;
-        }
-
-        .section-intro {
-            max-width: 480px;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
             opacity: 0.6;
         }
 
-        /* ---------- COURSE INTRO ---------- */
+        .hero h1 {
+            font-size: clamp(48px, 9vw, 110px);
+            line-height: 0.95;
+            letter-spacing: -4px;
+            margin-bottom: 35px;
+        }
 
-        .course-intro {
+        .hero p {
+            max-width: 650px;
+            font-size: 17px;
+            color: #555;
+        }
+
+        /* ===== INTRO ===== */
+
+        .intro {
             background: #202020;
             color: white;
-
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 70px;
+            padding: 90px 8%;
         }
 
-        .course-intro h2 {
-            color: white;
+        .intro-inner {
+            max-width: 900px;
+            margin: auto;
         }
 
-        .course-text {
-            font-size: 17px;
-            opacity: 0.7;
-            max-width: 600px;
-        }
-
-        .course-meta {
-            margin-top: 30px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .tag {
-            border: 1px solid rgba(255,255,255,0.25);
-            padding: 7px 13px;
+        .section-label {
             font-size: 12px;
-            border-radius: 999px;
-            opacity: 0.75;
+            letter-spacing: 3px;
+            opacity: 0.5;
+            margin-bottom: 20px;
         }
 
-        /* ---------- ASSIGNMENTS ---------- */
+        .intro h2 {
+            font-size: clamp(30px, 5vw, 55px);
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        .intro p {
+            max-width: 700px;
+            color: #ccc;
+        }
+
+        /* ===== ASSIGNMENTS ===== */
 
         .assignments {
-            background: #f7f6f2;
+            padding: 100px 8%;
         }
 
+        .assignments-inner {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .assignments-header {
+            margin-bottom: 55px;
+        }
+
+        .assignments-header h2 {
+            font-size: clamp(35px, 5vw, 60px);
+            line-height: 1.1;
+        }
+
+        /* ===== GROUP ===== */
+
         .assignment-group {
-            margin-bottom: 90px;
+            margin-bottom: 70px;
         }
 
         .group-title {
             display: flex;
-            align-items: center;
-            gap: 18px;
+            align-items: baseline;
+            gap: 15px;
 
-            margin-bottom: 28px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
 
-            padding-bottom: 15px;
-            border-bottom: 1px solid rgba(0,0,0,0.15);
+            border-bottom: 1px solid #ccc;
         }
 
         .group-title span {
-            font-size: 13px;
-            letter-spacing: 0.12em;
-            opacity: 0.45;
+            font-size: 12px;
+            letter-spacing: 2px;
+            opacity: 0.5;
         }
 
         .group-title h3 {
             font-size: 25px;
-            font-weight: 600;
         }
 
-        .assignment-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 18px;
+        /* ===== CARDS ===== */
+
+        .assignment-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
         }
 
         .assignment-card {
-            position: relative;
-
-            min-height: 210px;
-            padding: 30px;
-
-            border: 1px solid rgba(0,0,0,0.12);
-            background: #fff;
-
             display: flex;
-            flex-direction: column;
+            align-items: center;
             justify-content: space-between;
+
+            padding: 28px 30px;
+
+            border: 1px solid #d5d3cc;
+            background: #eeece6;
 
             transition:
                 transform 0.3s ease,
                 background 0.3s ease,
-                color 0.3s ease;
+                border-color 0.3s ease;
         }
 
         .assignment-card:hover {
-            transform: translateY(-6px);
-            background: #202020;
-            color: white;
+            transform: translateX(8px);
+            background: #e5e2da;
+            border-color: #202020;
         }
 
-        .assignment-card .number {
-            font-size: 13px;
-            letter-spacing: 0.12em;
-            opacity: 0.45;
+        .number {
+            font-size: 12px;
+            letter-spacing: 2px;
+            opacity: 0.5;
+            margin-bottom: 5px;
         }
 
         .assignment-card h4 {
-            font-size: 27px;
+            font-size: 23px;
             line-height: 1.3;
-            margin: 25px 0 8px;
+            margin-bottom: 5px;
         }
 
         .assignment-card p {
             font-size: 14px;
-            opacity: 0.55;
+            color: #666;
         }
 
         .card-arrow {
-            position: absolute;
-            right: 28px;
-            bottom: 25px;
-
-            font-size: 24px;
-
-            opacity: 0.45;
-
-            transition: 0.3s;
+            font-size: 25px;
+            transition: transform 0.3s ease;
         }
 
         .assignment-card:hover .card-arrow {
-            opacity: 1;
-            transform: translateX(5px);
+            transform: translateX(6px);
         }
+
+        /* ===== COMING SOON ===== */
 
         .coming-soon {
             cursor: default;
@@ -288,131 +241,103 @@
 
         .coming-soon:hover {
             transform: none;
-            background: #fff;
-            color: #202020;
+            background: #eeece6;
+            border-color: #d5d3cc;
         }
 
         .coming-soon .card-arrow {
-            font-size: 11px;
-            letter-spacing: 0.08em;
+            opacity: 0.3;
         }
 
-        /* ---------- INTEGRATION ---------- */
+        /* ===== NOTE ===== */
 
-        .integration {
+        .note {
+            margin-top: 30px;
+            padding: 25px 30px;
+
             background: #e9e7df;
+            border-left: 3px solid #202020;
         }
 
-        .integration-box {
-            padding: 50px;
-
-            border: 1px solid rgba(0,0,0,0.15);
-
-            background: rgba(255,255,255,0.35);
-        }
-
-        .integration-box h3 {
-            font-size: 32px;
-            margin-bottom: 12px;
-        }
-
-        .integration-box p {
-            opacity: 0.6;
-        }
-
-        /* ---------- BACK ---------- */
-
-        .back-section {
-            padding: 70px 8%;
-            background: #202020;
-            color: white;
-        }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-
+        .note p {
             font-size: 14px;
-            opacity: 0.7;
-
-            transition: 0.3s;
+            color: #555;
         }
 
-        .back-link:hover {
-            opacity: 1;
-            transform: translateX(-5px);
-        }
-
-        /* ---------- FOOTER ---------- */
+        /* ===== FOOTER ===== */
 
         footer {
-            padding: 30px 8%;
             background: #202020;
             color: white;
+            padding: 45px 8%;
 
-            border-top: 1px solid rgba(255,255,255,0.15);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-            font-size: 12px;
+        footer p {
+            font-size: 13px;
             opacity: 0.5;
         }
 
-        /* ---------- MOBILE ---------- */
+        .footer-back {
+            font-size: 13px;
+        }
+
+        .footer-back:hover {
+            opacity: 0.6;
+        }
+
+        /* ===== MOBILE ===== */
 
         @media (max-width: 700px) {
 
             nav {
-                padding: 15px 5%;
-            }
-
-            .nav-links {
-                gap: 12px;
-                font-size: 12px;
-            }
-
-            .nav-links li:nth-child(2),
-            .nav-links li:nth-child(3),
-            .nav-links li:nth-child(4) {
-                display: none;
+                height: 60px;
+                padding: 0 5%;
             }
 
             .hero {
-                min-height: 65vh;
-                padding: 130px 7% 70px;
+                min-height: 70vh;
+                padding: 110px 7% 70px;
             }
 
             .hero h1 {
-                font-size: 55px;
+                font-size: 52px;
+                letter-spacing: -2px;
             }
 
-            .hero-description {
+            .hero p {
                 font-size: 15px;
             }
 
-            .section {
+            .intro,
+            .assignments {
                 padding: 70px 7%;
             }
 
-            .section-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .course-intro {
-                grid-template-columns: 1fr;
-                gap: 35px;
-            }
-
-            .assignment-grid {
-                grid-template-columns: 1fr;
-            }
-
             .assignment-card {
-                min-height: 190px;
+                padding: 22px 20px;
             }
 
-            .integration-box {
-                padding: 30px;
+            .assignment-card h4 {
+                font-size: 19px;
+            }
+
+            .card-arrow {
+                font-size: 20px;
+            }
+
+            .group-title h3 {
+                font-size: 21px;
+            }
+
+            footer {
+                padding: 35px 7%;
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
             }
         }
     </style>
@@ -420,391 +345,388 @@
 
 <body>
 
-    <!-- NAV -->
+    <!-- ===== NAV ===== -->
+
     <nav>
         <a href="index.html" class="logo">WS.</a>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Portfolio</a></li>
-            <li><a href="#html">HTML</a></li>
-            <li><a href="#css">CSS</a></li>
-            <li><a href="#integration">Integration</a></li>
-        </ul>
+        <a href="index.html" class="back-link">
+            ← 回到 Portfolio
+        </a>
     </nav>
 
 
-    <!-- HERO -->
+    <!-- ===== HERO ===== -->
+
     <header class="hero">
 
         <div class="eyebrow">
-            Course / Digital Technology
+            LEARNING & MATERIAL DESIGN
         </div>
 
         <h1>
-            數位科技
-            <span>概論作業.</span>
+            數位科技<br>
+            概論作業.
         </h1>
 
-        <p class="hero-description">
-            數位科技概論課程中的 HTML 與 CSS 學習紀錄。
-            從文字結構、多媒體、表單，到視覺風格、Layout、Cards、RWD
-            與 Accessibility，逐步累積網頁設計與製作能力。
+        <p>
+            臺北市立大學｜學習與媒材設計學系
+            <br>
+            數位科技概論課程作業紀錄
         </p>
 
     </header>
 
 
-    <!-- COURSE INTRO -->
-    <section class="section course-intro">
+    <!-- ===== INTRO ===== -->
 
-        <div>
-            <div class="section-number">
-                00 / COURSE
+    <section class="intro">
+
+        <div class="intro-inner">
+
+            <div class="section-label">
+                ABOUT THIS PAGE
             </div>
 
             <h2>
-                Digital<br>
-                Technology
+                從 HTML 到 CSS，<br>
+                一步一步建立網頁。
             </h2>
-        </div>
 
-        <div>
-
-            <p class="course-text">
-                這裡整理我在「數位科技概論」課程中的練習與作品。
-                目前從 HTML 開始，學習如何使用正確的結構與標籤組織內容，
-                接著延伸到 CSS 的視覺風格與版面設計。
+            <p>
+                這裡整理數位科技概論課程中的各項練習與作業，
+                記錄從 HTML 基礎、CSS 視覺風格，
+                到整頁版型、RWD 與無障礙設計的學習過程。
             </p>
-
-            <div class="course-meta">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">RWD</span>
-                <span class="tag">Accessibility</span>
-                <span class="tag">Web Design</span>
-            </div>
 
         </div>
 
     </section>
 
 
-    <!-- ASSIGNMENTS -->
-    <main class="section assignments">
+    <!-- ===== ASSIGNMENTS ===== -->
 
-        <div class="section-header">
+    <main class="assignments">
 
-            <div>
-                <div class="section-number">
-                    01 — 09 / ASSIGNMENTS
+        <div class="assignments-inner">
+
+            <div class="assignments-header">
+
+                <div class="section-label">
+                    COURSE WORKS
                 </div>
 
-                <h2>Learning<br>Process.</h2>
+                <h2>
+                    課程作業
+                </h2>
+
             </div>
 
-            <p class="section-intro">
-                課程練習依照學習順序整理，
-                未來可以逐步加入實際作品、截圖與學習反思。
-            </p>
+
+            <!-- ===== HTML ===== -->
+
+            <section class="assignment-group">
+
+                <div class="group-title">
+                    <span>01 — 04</span>
+                    <h3>HTML</h3>
+                </div>
+
+
+                <div class="assignment-list">
+
+                    <!-- 活動一 -->
+
+                    <a href="water-and-life.html"
+                       class="assignment-card">
+
+                        <div>
+
+                            <div class="number">
+                                活動一
+                            </div>
+
+                            <h4>
+                                HTML <br>
+                                的小作業們
+                            </h4>
+
+                            <p>
+                                文字層級｜HTML Practice
+                            </p>
+
+                        </div>
+
+                        <div class="card-arrow">
+                            →
+                        </div>
+
+                    </a>
+
+
+                    <!-- 活動二 -->
+
+                    <div class="assignment-card coming-soon">
+
+                        <div>
+
+                            <div class="number">
+                                活動二
+                            </div>
+
+                            <h4>
+                                多媒體
+                            </h4>
+
+                            <p>
+                                多媒體｜HTML Practice
+                            </p>
+
+                        </div>
+
+                        <div class="card-arrow">
+                            →
+                        </div>
+
+                    </div>
+
+
+                    <!-- 活動三 -->
+
+                    <div class="assignment-card coming-soon">
+
+                        <div>
+
+                            <div class="number">
+                                活動三
+                            </div>
+
+                            <h4>
+                                清單與表格
+                            </h4>
+
+                            <p>
+                                清單與表格｜HTML Practice
+                            </p>
+
+                        </div>
+
+                        <div class="card-arrow">
+                            →
+                        </div>
+
+                    </div>
+
+
+                    <!-- 活動四 -->
+
+                    <div class="assignment-card coming-soon">
+
+                        <div>
+
+                            <div class="number">
+                                活動四
+                            </div>
+
+                            <h4>
+                                表單元件
+                            </h4>
+
+                            <p>
+                                表單元件｜HTML Practice
+                            </p>
+
+                        </div>
+
+                        <div class="card-arrow">
+                            →
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ===== CSS ===== -->
+
+            <section class="assignment-group">
+
+                <div class="group-title">
+                    <span>05 — 09</span>
+                    <h3>CSS</h3>
+                </div>
+
+
+                <div class="assignment-list">
+
+                    <!-- 活動五 -->
+
+                    <div class="assignment-card coming-soon">
+
+                        <div>
+
+                            <div class="number">
+                                活動五
+                            </div>
+
+                            <h4>
+                                視覺風格
+                            </h4>
+
+                            <p>
+                                視覺風格｜CSS Practice
+                            </p>
+
+                        </div>
+
+                        <div class="card-arrow">
+                            →
+                        </div>
+
+                    </div>
+
+
+                    <!-- 活動六 -->
+
+                    <div class="assignment-card coming-soon">
+
+                        <div>
+
+                            <div class="number">
+                                活動六
+                            </div>
+
+                            <h4>
+                                整頁版型
+                            </h4>
+
+                            <p>
+                                整頁版型｜CSS Practice
+                            </p>
+
+                        </div>
+
+                        <div class="card-arrow">
+                            →
+                        </div>
+
+                    </div>
+
+
+                    <!-- 活動七 -->
+
+                    <div class="assignment-card coming-soon">
+
+                        <div>
+
+                            <div class="number">
+                                活動七
+                            </div>
+
+                            <h4>
+                                卡片排列
+                            </h4>
+
+                            <p>
+                                卡片排列｜CSS Practice
+                            </p>
+
+                        </div>
+
+                        <div class="card-arrow">
+                            →
+                        </div>
+
+                    </div>
+
+
+                    <!-- 活動八 -->
+
+                    <div class="assignment-card coming-soon">
+
+                        <div>
+
+                            <div class="number">
+                                活動八
+                            </div>
+
+                            <h4>
+                                RWD
+                            </h4>
+
+                            <p>
+                                RWD｜CSS Practice
+                            </p>
+
+                        </div>
+
+                        <div class="card-arrow">
+                            →
+                        </div>
+
+                    </div>
+
+
+                    <!-- 活動九 -->
+
+                    <div class="assignment-card coming-soon">
+
+                        <div>
+
+                            <div class="number">
+                                活動九
+                            </div>
+
+                            <h4>
+                                無障礙
+                            </h4>
+
+                            <p>
+                                無障礙｜CSS Practice
+                            </p>
+
+                        </div>
+
+                        <div class="card-arrow">
+                            →
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ===== NOTE ===== -->
+
+            <div class="note">
+
+                <p>
+                    ※ 目前已完成活動一，其他活動將隨課程進度陸續更新。
+                </p>
+
+            </div>
 
         </div>
-
-
-        <!-- HTML -->
-        <section class="assignment-group" id="html">
-
-            <div class="group-title">
-                <span>01 / HTML</span>
-                <h3>HTML 基礎</h3>
-            </div>
-
-            <div class="assignment-grid">
-
-                <!-- Activity 01 -->
-                <a href="water-and-life.html" class="assignment-card">
-
-                    <div>
-                        <div class="number">
-                            ACTIVITY 01
-                        </div>
-
-                        <h4>
-                            水與生活：<br>
-                            小小科學探索日
-                        </h4>
-
-                        <p>
-                            文字層級｜HTML Practice
-                        </p>
-                    </div>
-
-                    <div class="card-arrow">
-                        →
-                    </div>
-
-                </a>
-
-
-                <!-- Activity 02 -->
-                <div class="assignment-card coming-soon">
-
-                    <div>
-                        <div class="number">
-                            ACTIVITY 02
-                        </div>
-
-                        <h4>
-                            多媒體
-                        </h4>
-
-                        <p>
-                            圖片、音訊與影片｜HTML Practice
-                        </p>
-                    </div>
-
-                    <div class="card-arrow">
-                        COMING SOON
-                    </div>
-
-                </div>
-
-
-                <!-- Activity 03 -->
-                <div class="assignment-card coming-soon">
-
-                    <div>
-                        <div class="number">
-                            ACTIVITY 03
-                        </div>
-
-                        <h4>
-                            清單與表格
-                        </h4>
-
-                        <p>
-                            Lists & Tables｜HTML Practice
-                        </p>
-                    </div>
-
-                    <div class="card-arrow">
-                        COMING SOON
-                    </div>
-
-                </div>
-
-
-                <!-- Activity 04 -->
-                <div class="assignment-card coming-soon">
-
-                    <div>
-                        <div class="number">
-                            ACTIVITY 04
-                        </div>
-
-                        <h4>
-                            表單元件
-                        </h4>
-
-                        <p>
-                            Forms｜HTML Practice
-                        </p>
-                    </div>
-
-                    <div class="card-arrow">
-                        COMING SOON
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- CSS -->
-        <section class="assignment-group" id="css">
-
-            <div class="group-title">
-                <span>02 / CSS</span>
-                <h3>CSS 視覺設計</h3>
-            </div>
-
-            <div class="assignment-grid">
-
-                <!-- Activity 05 -->
-                <div class="assignment-card coming-soon">
-
-                    <div>
-                        <div class="number">
-                            ACTIVITY 05
-                        </div>
-
-                        <h4>
-                            視覺風格
-                        </h4>
-
-                        <p>
-                            Visual Style｜CSS Practice
-                        </p>
-                    </div>
-
-                    <div class="card-arrow">
-                        COMING SOON
-                    </div>
-
-                </div>
-
-
-                <!-- Activity 06 -->
-                <div class="assignment-card coming-soon">
-
-                    <div>
-                        <div class="number">
-                            ACTIVITY 06
-                        </div>
-
-                        <h4>
-                            Layout
-                        </h4>
-
-                        <p>
-                            Page Layout｜CSS Practice
-                        </p>
-                    </div>
-
-                    <div class="card-arrow">
-                        COMING SOON
-                    </div>
-
-                </div>
-
-
-                <!-- Activity 07 -->
-                <div class="assignment-card coming-soon">
-
-                    <div>
-                        <div class="number">
-                            ACTIVITY 07
-                        </div>
-
-                        <h4>
-                            Cards
-                        </h4>
-
-                        <p>
-                            Card Design｜CSS Practice
-                        </p>
-                    </div>
-
-                    <div class="card-arrow">
-                        COMING SOON
-                    </div>
-
-                </div>
-
-
-                <!-- Activity 08 -->
-                <div class="assignment-card coming-soon">
-
-                    <div>
-                        <div class="number">
-                            ACTIVITY 08
-                        </div>
-
-                        <h4>
-                            RWD
-                        </h4>
-
-                        <p>
-                            Responsive Web Design
-                        </p>
-                    </div>
-
-                    <div class="card-arrow">
-                        COMING SOON
-                    </div>
-
-                </div>
-
-
-                <!-- Activity 09 -->
-                <div class="assignment-card coming-soon">
-
-                    <div>
-                        <div class="number">
-                            ACTIVITY 09
-                        </div>
-
-                        <h4>
-                            Accessibility
-                        </h4>
-
-                        <p>
-                            Web Accessibility｜CSS Practice
-                        </p>
-                    </div>
-
-                    <div class="card-arrow">
-                        COMING SOON
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
 
     </main>
 
 
-    <!-- INTEGRATION -->
-    <section class="section integration" id="integration">
+    <!-- ===== FOOTER ===== -->
 
-        <div class="section-header">
+    <footer>
 
-            <div>
-                <div class="section-number">
-                    03 / INTEGRATION
-                </div>
+        <p>
+            © 2026 Wei-Shan Hsu
+        </p>
 
-                <h2>
-                    Final<br>
-                    Project.
-                </h2>
-            </div>
-
-        </div>
-
-        <div class="integration-box">
-
-            <h3>
-                Coming Soon.
-            </h3>
-
-            <p>
-                將課程中學到的 HTML、CSS、RWD 與 Accessibility
-                整合到完整的網頁作品中。
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- BACK -->
-    <section class="back-section">
-
-        <a href="index.html" class="back-link">
-            ← Back to Portfolio
+        <a href="index.html" class="footer-back">
+            ← Portfolio
         </a>
 
-    </section>
-
-
-    <!-- FOOTER -->
-    <footer>
-        © 2026 Wei-Shan Hsu
     </footer>
 
 </body>
